@@ -1,0 +1,457 @@
+/* ===== RESET BÁSICO ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #1A1A1A;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-family: 'Fredoka', sans-serif;
+}
+
+/* ===== CLASSES REUTILIZÁVEIS ===== */
+
+/* bolinha estilo pokébola usada no logo */
+.bola {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #DC0A2D;
+  border: 2px solid #1A1A1A;
+  display: inline-block;
+}
+
+.bola-branca {
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+/* tag pequena (etiqueta) usada no hero e no destaque */
+.tag {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14px;
+  color: #DC0A2D;
+  background-color: #FDE6E9;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+
+.tag-escura {
+  background-color: #E8622C;
+  color: #FFFFFF;
+}
+
+/* botões */
+.botao {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 12px 24px;
+  border-radius: 30px;
+  border: 2px solid #1A1A1A;
+  background-color: #FFC72C;
+  color: #1A1A1A;
+  cursor: pointer;
+}
+
+.botao-primario {
+  background-color: #DC0A2D;
+  color: #FFFFFF;
+}
+
+.botao-pequeno {
+  padding: 8px 18px;
+  font-size: 14px;
+}
+
+.link-simples {
+  font-weight: 600;
+  font-size: 15px;
+  margin-left: 16px;
+}
+
+/* ===== HEADER ===== */
+header {
+  border-bottom: 3px solid #1A1A1A;
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
+}
+
+.header-container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 18px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.menu a {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* ===== HERO ===== */
+.hero {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 70px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-texto {
+  max-width: 520px;
+}
+
+.hero-texto h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.hero-texto p {
+  font-size: 17px;
+  color: #4A4A4A;
+  margin-bottom: 28px;
+}
+
+.hero-botoes {
+  display: flex;
+  align-items: center;
+}
+
+.hero-imagem img {
+  width: 320px;
+}
+
+/* ===== SOBRE ===== */
+.sobre {
+  background-color: #F5F3F0;
+  border-top: 3px solid #1A1A1A;
+  border-bottom: 3px solid #1A1A1A;
+  padding: 70px 32px;
+}
+
+.sobre-container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.sobre h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.sobre-texto p {
+  color: #4A4A4A;
+  font-size: 16px;
+  max-width: 620px;
+  margin-bottom: 16px;
+}
+
+.sobre-numeros {
+  display: flex;
+  gap: 36px;
+  margin-top: 24px;
+}
+
+.sobre-numeros strong {
+  display: block;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 28px;
+  color: #DC0A2D;
+}
+
+.sobre-numeros span {
+  font-size: 14px;
+  color: #666666;
+}
+
+/* ===== STARTERS ===== */
+.starters {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 80px 32px;
+}
+
+.starters-titulo {
+  margin-bottom: 40px;
+}
+
+.starters-titulo h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.starters-titulo p {
+  color: #666666;
+  font-size: 15px;
+}
+
+.cards {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 260px;
+  border: 3px solid #1A1A1A;
+  border-radius: 20px;
+  padding: 26px 22px;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.card-grama {
+  background-color: #EAF5E7;
+}
+
+.card-fogo {
+  background-color: #FCEAE1;
+}
+
+.card-agua {
+  background-color: #E4F0FA;
+}
+
+.numero {
+  font-size: 13px;
+  color: #999999;
+  font-weight: 600;
+}
+
+.tipo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #FFFFFF;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.tipo-grama {
+  background-color: #5FAE4A;
+}
+
+.tipo-fogo {
+  background-color: #E8622C;
+}
+
+.tipo-agua {
+  background-color: #4592D6;
+}
+
+.card img {
+  width: 140px;
+  margin: 10px auto;
+}
+
+.card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555555;
+  margin-bottom: 18px;
+}
+
+.card-info {
+  display: flex;
+  gap: 16px;
+  border-top: 2px dashed #CCCCCC;
+  padding-top: 14px;
+}
+
+.card-info div {
+  font-size: 12px;
+  color: #666666;
+}
+
+.card-info strong {
+  display: block;
+  font-size: 15px;
+  color: #1A1A1A;
+}
+
+/* ===== DESTAQUE ===== */
+.destaque {
+  background-color: #1A1A1A;
+  color: #FFFFFF;
+  padding: 80px 32px;
+}
+
+.destaque-container {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.destaque-imagem {
+  background-color: #2A2A2A;
+  border: 3px solid #333333;
+  border-radius: 20px;
+  padding: 40px;
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.destaque-imagem img {
+  width: 240px;
+}
+
+.destaque-texto {
+  flex: 1;
+  min-width: 280px;
+}
+
+.destaque-texto h2 {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.destaque-texto p {
+  color: #C9C9C9;
+  font-size: 16px;
+  margin-bottom: 26px;
+  max-width: 440px;
+}
+
+.barra-linha {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.barra-linha span {
+  width: 80px;
+  font-size: 13px;
+  color: #AAAAAA;
+  font-weight: 600;
+}
+
+.barra-fundo {
+  flex: 1;
+  height: 8px;
+  background-color: #333333;
+  border-radius: 10px;
+}
+
+.barra-preenchida {
+  height: 100%;
+  background-color: #FFC72C;
+  border-radius: 10px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #DC0A2D;
+  color: #FFFFFF;
+  padding: 40px 32px 26px;
+}
+
+.footer-container {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-logo {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.footer-rodape {
+  max-width: 1160px;
+  margin: 30px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* ===== RESPONSIVO (telas menores) ===== */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-botoes {
+    justify-content: center;
+  }
+
+  .sobre-numeros {
+    flex-wrap: wrap;
+  }
+
+  .destaque-container {
+    flex-direction: column;
+  }
+
+  .menu {
+    display: none;
+  }
+}

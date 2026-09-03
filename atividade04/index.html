@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokédex Kanto</title>
+
+  <!-- Fontes do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Arquivo de estilos -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="header-container">
+
+      <div class="logo">
+        <span class="bola"></span>
+        Pokédex Kanto
+      </div>
+
+      <nav>
+        <ul class="menu">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#starters">Starters</a></li>
+          <li><a href="#destaque">Destaque</a></li>
+        </ul>
+      </nav>
+
+      <button class="botao botao-pequeno">Explorar</button>
+
+    </div>
+  </header>
+
+  <!-- ===== HERO (banner principal) ===== -->
+  <section class="hero" id="inicio">
+    <div class="hero-texto">
+      <span class="tag">151 Pokémon de Kanto</span>
+      <h1>Conheça todos os Pokémon da primeira geração</h1>
+      <p>Uma Pokédex feita para quem cresceu (ou está crescendo) treinando, batalhando e capturando os clássicos de Kanto — do Bulbasaur ao Mew.</p>
+
+      <div class="hero-botoes">
+        <button class="botao botao-primario">Ver Pokédex completa</button>
+        <a href="#starters" class="link-simples">Ver starters ↓</a>
+      </div>
+    </div>
+
+    <div class="hero-imagem">
+      <img src="images/25.png" alt="Pikachu">
+    </div>
+  </section>
+
+  <!-- ===== SOBRE / DETALHES ===== -->
+  <section class="sobre" id="sobre">
+    <div class="sobre-container">
+
+      <h2>Uma coleção completa, região por região</h2>
+
+      <div class="sobre-texto">
+        <p>Esse projeto reúne os 151 Pokémon originais de Kanto em um único lugar, organizados por tipo, evolução e características. A ideia é criar uma referência rápida e visual para quem quer relembrar — ou aprender pela primeira vez — o universo que começou tudo.</p>
+        <p>Nas próximas etapas, a Pokédex vai ganhar busca por nome, filtro por tipo e dados em tempo real puxados direto da PokéAPI.</p>
+
+        <div class="sobre-numeros">
+          <div>
+            <strong>151</strong>
+            <span>Pokémon catalogados</span>
+          </div>
+          <div>
+            <strong>15</strong>
+            <span>Tipos diferentes</span>
+          </div>
+          <div>
+            <strong>3</strong>
+            <span>Starters clássicos</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== STARTERS (3 cards) ===== -->
+  <section class="starters" id="starters">
+
+    <div class="starters-titulo">
+      <h2>Escolha seu parceiro de jornada</h2>
+      <p>Os três iniciais clássicos de Kanto, cada um com seu tipo e estilo de batalha.</p>
+    </div>
+
+    <div class="cards">
+
+      <!-- Card 1: Bulbasaur -->
+      <div class="card card-grama">
+        <span class="numero">Nº 001</span>
+        <span class="tipo tipo-grama">Grama</span>
+        <img src="images/1.png" alt="Bulbasaur">
+        <h3>Bulbasaur</h3>
+        <p>Carrega uma semente nas costas desde o nascimento, que cresce junto com ele absorvendo luz solar.</p>
+        <div class="card-info">
+          <div><strong>Vegetal</strong>Tipo</div>
+          <div><strong>6,9 kg</strong>Peso</div>
+          <div><strong>0,7 m</strong>Altura</div>
+        </div>
+      </div>
+
+      <!-- Card 2: Charmander -->
+      <div class="card card-fogo">
+        <span class="numero">Nº 004</span>
+        <span class="tipo tipo-fogo">Fogo</span>
+        <img src="images/4.png" alt="Charmander">
+        <h3>Charmander</h3>
+        <p>A chama na ponta do rabo indica seu humor e vitalidade — se apagar, ele corre perigo.</p>
+        <div class="card-info">
+          <div><strong>Lagarto</strong>Tipo</div>
+          <div><strong>8,5 kg</strong>Peso</div>
+          <div><strong>0,6 m</strong>Altura</div>
+        </div>
+      </div>
+
+      <!-- Card 3: Squirtle -->
+      <div class="card card-agua">
+        <span class="numero">Nº 007</span>
+        <span class="tipo tipo-agua">Água</span>
+        <img src="images/7.png" alt="Squirtle">
+        <h3>Squirtle</h3>
+        <p>Se retrai na concha ao se sentir ameaçado, e usa jatos d'água certeiros para atacar à distância.</p>
+        <div class="card-info">
+          <div><strong>Tartaruga</strong>Tipo</div>
+          <div><strong>9,0 kg</strong>Peso</div>
+          <div><strong>0,5 m</strong>Altura</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== DESTAQUE (spotlight) ===== -->
+  <section class="destaque" id="destaque">
+    <div class="destaque-container">
+
+      <div class="destaque-imagem">
+        <img src="images/6.png" alt="Charizard">
+      </div>
+
+      <div class="destaque-texto">
+        <span class="tag tag-escura">Fogo / Voador</span>
+        <h2>Charizard</h2>
+        <p>A evolução final de Charmander cospe fogo intenso o suficiente para derreter qualquer coisa. Voa em busca de adversários fortes para testar sua chama.</p>
+
+        <div class="barras">
+          <div class="barra-linha">
+            <span>Ataque</span>
+            <div class="barra-fundo"><div class="barra-preenchida" style="width: 84%;"></div></div>
+          </div>
+          <div class="barra-linha">
+            <span>Defesa</span>
+            <div class="barra-fundo"><div class="barra-preenchida" style="width: 63%;"></div></div>
+          </div>
+          <div class="barra-linha">
+            <span>Velocidade</span>
+            <div class="barra-fundo"><div class="barra-preenchida" style="width: 80%;"></div></div>
+          </div>
+          <div class="barra-linha">
+            <span>HP</span>
+            <div class="barra-fundo"><div class="barra-preenchida" style="width: 73%;"></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <span class="bola bola-branca"></span>
+        Pokédex Kanto
+      </div>
+
+      <nav>
+        <ul class="menu">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#starters">Starters</a></li>
+          <li><a href="#destaque">Destaque</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-rodape">
+      <span>Projeto acadêmico — Definição de Projeto e Home-page</span>
+      <span>Dados e imagens: PokéAPI</span>
+    </div>
+  </footer>
+
+</body>
+</html>
