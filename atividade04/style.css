@@ -105,6 +105,11 @@ header {
   justify-content: space-between;
 }
 
+/* seletor combinado: bolinha somente dentro do cabeçalho */
+header .logo .bola {
+  margin-right: 6px;
+}
+
 .logo {
   font-weight: 700;
   font-size: 20px;
@@ -116,12 +121,13 @@ header {
   gap: 30px;
 }
 
-.menu a {
+/* seletor combinado (descendente): só os links que estão dentro do menu do header */
+header nav .menu a {
   font-weight: 600;
   font-size: 15px;
 }
 
-.menu a:hover {
+header nav .menu a:hover {
   text-decoration: underline;
 }
 
@@ -140,6 +146,7 @@ header {
   max-width: 520px;
 }
 
+/* seletor combinado: h1 apenas dentro de .hero-texto */
 .hero-texto h1 {
   font-size: 40px;
   font-weight: 700;
@@ -195,6 +202,7 @@ header {
   margin-top: 24px;
 }
 
+/* seletor combinado: strong apenas dentro de .sobre-numeros */
 .sobre-numeros strong {
   display: block;
   font-family: 'Fredoka', sans-serif;
@@ -235,7 +243,8 @@ header {
   flex-wrap: wrap;
 }
 
-.card {
+/* article dos starters (antes era .card em <div>, agora é <article class="card">) */
+.cards > article.card {
   flex: 1;
   min-width: 260px;
   border: 3px solid #1A1A1A;
@@ -286,18 +295,20 @@ header {
   background-color: #4592D6;
 }
 
-.card img {
+/* seletor combinado: imagem só dentro de um article.card */
+article.card img {
   width: 140px;
   margin: 10px auto;
 }
 
-.card h3 {
+/* seletor combinado: h3 só dentro de um article.card */
+article.card h3 {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 8px;
 }
 
-.card p {
+article.card p {
   font-size: 14px;
   color: #555555;
   margin-bottom: 18px;
@@ -319,6 +330,64 @@ header {
   display: block;
   font-size: 15px;
   color: #1A1A1A;
+}
+
+/* ===== PESQUISA (formulário) ===== */
+.pesquisa {
+  background-color: #FFFFFF;
+  border-bottom: 3px solid #1A1A1A;
+  padding: 70px 32px;
+  text-align: center;
+}
+
+.pesquisa-container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.pesquisa-container h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.pesquisa-container p {
+  color: #666666;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.form-pesquisa {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+/* seletor combinado: label apenas dentro de .campo */
+.campo label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* seletor combinado: input e select apenas dentro de .campo */
+.campo input,
+.campo select {
+  padding: 10px 14px;
+  border: 2px solid #1A1A1A;
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  min-width: 200px;
 }
 
 /* ===== DESTAQUE ===== */
@@ -378,6 +447,7 @@ header {
   margin-bottom: 12px;
 }
 
+/* seletor combinado: span só dentro de .barra-linha */
 .barra-linha span {
   width: 80px;
   font-size: 13px;
@@ -420,6 +490,11 @@ footer {
   font-size: 18px;
 }
 
+/* seletor combinado: links do menu apenas dentro do footer */
+footer nav .menu a {
+  color: #FFFFFF;
+}
+
 .footer-rodape {
   max-width: 1160px;
   margin: 30px auto 0;
@@ -453,5 +528,16 @@ footer {
 
   .menu {
     display: none;
+  }
+
+  .form-pesquisa {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .campo {
+    width: 100%;
+    align-items: center;
+    text-align: center;
   }
 }

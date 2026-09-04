@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pokédex Kanto</title>
+  <title>Catálogo Pokemon</title>
 
   <!-- Fontes do Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@
 
       <div class="logo">
         <span class="bola"></span>
-        Pokédex Kanto
+        Catálogo Pokemon
       </div>
 
       <nav>
@@ -36,6 +36,9 @@
 
     </div>
   </header>
+
+  <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+  <main>
 
   <!-- ===== HERO (banner principal) ===== -->
   <section class="hero" id="inicio">
@@ -62,7 +65,7 @@
       <h2>Uma coleção completa, região por região</h2>
 
       <div class="sobre-texto">
-        <p>Esse projeto reúne os 151 Pokémon originais de Kanto em um único lugar, organizados por tipo, evolução e características. A ideia é criar uma referência rápida e visual para quem quer relembrar — ou aprender pela primeira vez — o universo que começou tudo.</p>
+        <p>Esse projeto reúne os 151 Pokémon originais de Kanto em um único lugar, organizados por tipo, evolução e características. A ideia é criar uma referência rápida e visual para quem quer relembrar, ou aprender pela primeira vez o universo que começou tudo.</p>
         <p>Nas próximas etapas, a Pokédex vai ganhar busca por nome, filtro por tipo e dados em tempo real puxados direto da PokéAPI.</p>
 
         <div class="sobre-numeros">
@@ -95,7 +98,7 @@
     <div class="cards">
 
       <!-- Card 1: Bulbasaur -->
-      <div class="card card-grama">
+      <article class="card card-grama">
         <span class="numero">Nº 001</span>
         <span class="tipo tipo-grama">Grama</span>
         <img src="images/1.png" alt="Bulbasaur">
@@ -106,10 +109,10 @@
           <div><strong>6,9 kg</strong>Peso</div>
           <div><strong>0,7 m</strong>Altura</div>
         </div>
-      </div>
+      </article>
 
       <!-- Card 2: Charmander -->
-      <div class="card card-fogo">
+      <article class="card card-fogo">
         <span class="numero">Nº 004</span>
         <span class="tipo tipo-fogo">Fogo</span>
         <img src="images/4.png" alt="Charmander">
@@ -120,10 +123,10 @@
           <div><strong>8,5 kg</strong>Peso</div>
           <div><strong>0,6 m</strong>Altura</div>
         </div>
-      </div>
+      </article>
 
       <!-- Card 3: Squirtle -->
-      <div class="card card-agua">
+      <article class="card card-agua">
         <span class="numero">Nº 007</span>
         <span class="tipo tipo-agua">Água</span>
         <img src="images/7.png" alt="Squirtle">
@@ -134,8 +137,35 @@
           <div><strong>9,0 kg</strong>Peso</div>
           <div><strong>0,5 m</strong>Altura</div>
         </div>
-      </div>
+      </article>
 
+    </div>
+  </section>
+
+  <!-- ===== PESQUISA (formulário) ===== -->
+  <section class="pesquisa" id="pesquisa">
+    <div class="pesquisa-container">
+      <h2>Procurando um Pokémon específico?</h2>
+      <p>Digite o nome ou escolha um tipo para filtrar a Pokédex.</p>
+
+      <form class="form-pesquisa" action="#" method="get">
+        <div class="campo">
+          <label for="nome-pokemon">Nome do Pokémon</label>
+          <input type="text" id="nome-pokemon" name="nome" placeholder="Ex: Pikachu">
+        </div>
+
+        <div class="campo">
+          <label for="tipo-pokemon">Tipo</label>
+          <select id="tipo-pokemon" name="tipo">
+            <option value="">Todos os tipos</option>
+            <option value="grama">Grama</option>
+            <option value="fogo">Fogo</option>
+            <option value="agua">Água</option>
+          </select>
+        </div>
+
+        <button type="submit" class="botao botao-primario">Buscar</button>
+      </form>
     </div>
   </section>
 
@@ -175,12 +205,14 @@
     </div>
   </section>
 
+  </main>
+
   <!-- ===== FOOTER ===== -->
   <footer>
     <div class="footer-container">
       <div class="footer-logo">
         <span class="bola bola-branca"></span>
-        Pokédex Kanto
+        Catálogo Pokemon
       </div>
 
       <nav>
@@ -194,7 +226,7 @@
     </div>
 
     <div class="footer-rodape">
-      <span>Projeto acadêmico — Definição de Projeto e Home-page</span>
+      <span>Projeto acadêmico - Desenvolvimento de Interfaces Web</span>
       <span>Dados e imagens: PokéAPI</span>
     </div>
   </footer>
