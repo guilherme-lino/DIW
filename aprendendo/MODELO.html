@@ -1,0 +1,2056 @@
+# MODELO CORINGA — HTML + CSS
+
+> **Como usar:** copie este modelo e vá apagando/adaptando as partes que a questão não pedir.
+> Os comentários `<!-- -->` são HTML e `/* */` são CSS.
+
+---
+
+# 1. ESTRUTURA BÁSICA DO HTML
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!-- Define a codificação dos caracteres -->
+    <meta charset="UTF-8">
+
+    <!-- Faz a página se adaptar a celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título que aparece na aba do navegador -->
+    <title>Minha Página</title>
+
+    <!-- Conecta o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ========================================= -->
+    <!-- CABEÇALHO -->
+    <!-- ========================================= -->
+
+    <header>
+
+        <h1>Título da Página</h1>
+
+        <!-- Menu de navegação -->
+        <nav>
+
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ========================================= -->
+    <!-- CONTEÚDO PRINCIPAL -->
+    <!-- ========================================= -->
+
+    <main>
+
+        <!-- Seção da página -->
+        <section id="inicio">
+
+            <h2>Seção Inicial</h2>
+
+            <p>
+                Este é um texto da página.
+            </p>
+
+            <!-- Imagem -->
+            <img src="imagem.jpg"
+                 alt="Descrição da imagem">
+
+        </section>
+
+
+        <!-- ===================================== -->
+        <!-- CARDS -->
+        <!-- ===================================== -->
+
+        <section id="sobre">
+
+            <h2>Cards</h2>
+
+            <div class="container-cards">
+
+                <div class="card">
+
+                    <img src="imagem1.jpg" alt="Imagem 1">
+
+                    <h3>Card 1</h3>
+
+                    <p>
+                        Descrição do card.
+                    </p>
+
+                    <button>Saiba mais</button>
+
+                </div>
+
+
+                <div class="card">
+
+                    <img src="imagem2.jpg" alt="Imagem 2">
+
+                    <h3>Card 2</h3>
+
+                    <p>
+                        Descrição do card.
+                    </p>
+
+                    <button>Saiba mais</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================== -->
+        <!-- LISTAS -->
+        <!-- ===================================== -->
+
+        <section>
+
+            <h2>Listas</h2>
+
+            <!-- Lista NÃO ordenada -->
+            <ul>
+
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+
+            </ul>
+
+
+            <!-- Lista ordenada -->
+            <ol>
+
+                <li>Primeiro</li>
+                <li>Segundo</li>
+                <li>Terceiro</li>
+
+            </ol>
+
+        </section>
+
+
+        <!-- ===================================== -->
+        <!-- TABELA -->
+        <!-- ===================================== -->
+
+        <section>
+
+            <h2>Tabela</h2>
+
+            <table>
+
+                <!-- Cabeçalho da tabela -->
+                <thead>
+
+                    <tr>
+
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Curso</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <!-- Corpo da tabela -->
+                <tbody>
+
+                    <tr>
+
+                        <td>João</td>
+                        <td>20</td>
+                        <td>Computação</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Maria</td>
+                        <td>21</td>
+                        <td>Engenharia</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- ===================================== -->
+        <!-- FORMULÁRIO -->
+        <!-- ===================================== -->
+
+        <section id="contato">
+
+            <h2>Formulário</h2>
+
+            <form>
+
+                <!-- Campo de texto -->
+                <label for="nome">Nome:</label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                >
+
+
+                <!-- Campo de email -->
+                <label for="email">Email:</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Digite seu email"
+                >
+
+
+                <!-- Campo de senha -->
+                <label for="senha">Senha:</label>
+
+                <input
+                    type="password"
+                    id="senha"
+                    name="senha"
+                >
+
+
+                <!-- Select -->
+                <label for="curso">Curso:</label>
+
+                <select id="curso" name="curso">
+
+                    <option value="cc">Ciência da Computação</option>
+                    <option value="eng">Engenharia</option>
+                    <option value="si">Sistemas de Informação</option>
+
+                </select>
+
+
+                <!-- Radio -->
+                <p>Turno:</p>
+
+                <label>
+                    <input type="radio" name="turno" value="manha">
+                    Manhã
+                </label>
+
+                <label>
+                    <input type="radio" name="turno" value="noite">
+                    Noite
+                </label>
+
+
+                <!-- Checkbox -->
+                <label>
+
+                    <input type="checkbox" name="aceite">
+
+                    Aceito os termos
+
+                </label>
+
+
+                <!-- Área de texto -->
+                <label for="mensagem">Mensagem:</label>
+
+                <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    rows="5"
+                    placeholder="Digite sua mensagem">
+                </textarea>
+
+
+                <!-- Botão -->
+                <button type="submit">
+                    Enviar
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========================================= -->
+    <!-- RODAPÉ -->
+    <!-- ========================================= -->
+
+    <footer>
+
+        <p>
+            © 2026 - Minha Página
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
+```
+
+---
+
+# 2. CSS CORINGA
+
+```css
+/* ============================================= */
+/* RESET BÁSICO */
+/* ============================================= */
+
+/*
+   Remove margens e espaçamentos padrão
+   dos elementos.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+
+    /* Faz width/height considerarem
+       padding e border */
+    box-sizing: border-box;
+}
+
+
+/* ============================================= */
+/* BODY */
+/* ============================================= */
+
+body {
+
+    /* Fonte da página */
+    font-family: Arial, sans-serif;
+
+    /* Cor do texto */
+    color: #222;
+
+    /* Cor do fundo */
+    background-color: #f5f5f5;
+
+}
+
+
+/* ============================================= */
+/* HEADER */
+/* ============================================= */
+
+header {
+
+    /* Cor do fundo */
+    background-color: #222;
+
+    /* Cor do texto */
+    color: white;
+
+    /* Espaçamento interno */
+    padding: 20px;
+
+}
+
+
+/* ============================================= */
+/* MENU */
+/* ============================================= */
+
+nav {
+
+    /* FLEXBOX */
+    display: flex;
+
+    /* Espaçamento entre os elementos */
+    gap: 20px;
+
+    /* Alinhamento */
+    align-items: center;
+
+}
+
+
+nav a {
+
+    /* Remove sublinhado */
+    text-decoration: none;
+
+    /* Cor */
+    color: white;
+
+}
+
+
+/* Quando passar o mouse */
+nav a:hover {
+
+    color: #00aaff;
+
+}
+
+
+/* ============================================= */
+/* MAIN */
+/* ============================================= */
+
+main {
+
+    /* Limita a largura */
+    max-width: 1200px;
+
+    /* Centraliza */
+    margin: 0 auto;
+
+    /* Espaçamento interno */
+    padding: 30px;
+
+}
+
+
+/* ============================================= */
+/* SECTION */
+/* ============================================= */
+
+section {
+
+    /* Espaçamento externo */
+    margin-bottom: 40px;
+
+}
+
+
+/* ============================================= */
+/* TÍTULOS */
+/* ============================================= */
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* ============================================= */
+/* IMAGENS */
+/* ============================================= */
+
+img {
+
+    /* Nunca ultrapassa o tamanho
+       do elemento pai */
+    max-width: 100%;
+
+    /* Mantém proporção */
+    height: auto;
+
+}
+
+
+/* ============================================= */
+/* CARDS */
+/* ============================================= */
+
+.container-cards {
+
+    /* Ativa FLEXBOX */
+    display: flex;
+
+    /* Permite quebrar linha */
+    flex-wrap: wrap;
+
+    /* Espaço entre os cards */
+    gap: 20px;
+
+}
+
+
+.card {
+
+    /* Fundo */
+    background-color: white;
+
+    /* Espaçamento interno */
+    padding: 20px;
+
+    /* Arredondamento */
+    border-radius: 10px;
+
+    /* Borda */
+    border: 1px solid #ddd;
+
+    /* Sombra */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+    /* Largura */
+    width: 300px;
+
+}
+
+
+/* ============================================= */
+/* BOTÃO */
+/* ============================================= */
+
+button {
+
+    /* Espaçamento interno */
+    padding: 10px 20px;
+
+    /* Cor */
+    background-color: #007bff;
+
+    /* Cor do texto */
+    color: white;
+
+    /* Remove borda */
+    border: none;
+
+    /* Arredonda */
+    border-radius: 5px;
+
+    /* Mostra que é clicável */
+    cursor: pointer;
+
+}
+
+
+/* Quando passar o mouse */
+button:hover {
+
+    background-color: #0056b3;
+
+}
+
+
+/* ============================================= */
+/* TABELA */
+/* ============================================= */
+
+table {
+
+    /* Junta as bordas */
+    border-collapse: collapse;
+
+    /* Ocupa toda a largura */
+    width: 100%;
+
+}
+
+
+th,
+td {
+
+    /* Borda */
+    border: 1px solid #ccc;
+
+    /* Espaçamento */
+    padding: 10px;
+
+    /* Alinhamento */
+    text-align: left;
+
+}
+
+
+th {
+
+    background-color: #ddd;
+
+}
+
+
+/* ============================================= */
+/* FORMULÁRIO */
+/* ============================================= */
+
+form {
+
+    /* Organiza os elementos
+       verticalmente */
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+
+
+input,
+select,
+textarea {
+
+    /* Espaçamento interno */
+    padding: 10px;
+
+    /* Borda */
+    border: 1px solid #ccc;
+
+    /* Arredondamento */
+    border-radius: 5px;
+
+}
+
+
+/* ============================================= */
+/* FOOTER */
+/* ============================================= */
+
+footer {
+
+    background-color: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+}
+
+
+/* ============================================= */
+/* RESPONSIVIDADE */
+/* ============================================= */
+
+/*
+   Quando a tela tiver no máximo 600px
+   (celular), aplica essas regras.
+*/
+
+@media (max-width: 600px) {
+
+    nav {
+
+        /* Menu vira coluna */
+        flex-direction: column;
+
+    }
+
+
+    .container-cards {
+
+        /* Cards ficam em coluna */
+        flex-direction: column;
+
+    }
+
+
+    .card {
+
+        /* Card ocupa toda a largura */
+        width: 100%;
+
+    }
+
+}
+```
+
+---
+
+# 3. COISAS QUE VOCÊ PRECISA SABER DE CABEÇA
+
+## HTML
+
+```html
+<!-- Título -->
+<h1>Título</h1>
+
+<!-- Parágrafo -->
+<p>Texto</p>
+
+<!-- Link -->
+<a href="https://google.com">Google</a>
+
+<!-- Imagem -->
+<img src="imagem.jpg" alt="Descrição">
+
+<!-- Div -->
+<div>Conteúdo</div>
+
+<!-- Seção -->
+<section>Conteúdo</section>
+
+<!-- Cabeçalho -->
+<header>Conteúdo</header>
+
+<!-- Conteúdo principal -->
+<main>Conteúdo</main>
+
+<!-- Rodapé -->
+<footer>Conteúdo</footer>
+```
+
+---
+
+# 4. CLASSES E IDs
+
+### Classe
+
+Use quando vários elementos possuem o mesmo estilo.
+
+```html
+<div class="card">
+    Conteúdo
+</div>
+
+<div class="card">
+    Outro conteúdo
+</div>
+```
+
+CSS:
+
+```css
+.card {
+    background-color: white;
+}
+```
+
+---
+
+### ID
+
+Use para identificar um elemento específico.
+
+```html
+<section id="contato">
+    Contato
+</section>
+```
+
+CSS:
+
+```css
+#contato {
+    background-color: blue;
+}
+```
+
+### REGRA PARA NÃO CONFUNDIR
+
+```css
+.card { }       /* classe */
+
+#contato { }    /* id */
+```
+
+---
+
+# 5. FLEXBOX — MUITO IMPORTANTE
+
+Se a questão falar:
+
+* alinhar elementos;
+* colocar elementos lado a lado;
+* centralizar;
+* criar menu;
+* criar cards;
+* distribuir elementos;
+
+pense em:
+
+```css
+.container {
+
+    display: flex;
+
+}
+```
+
+### Direção
+
+```css
+flex-direction: row;
+```
+
+Elementos lado a lado.
+
+```css
+flex-direction: column;
+```
+
+Elementos um embaixo do outro.
+
+---
+
+### Centralizar horizontalmente
+
+```css
+justify-content: center;
+```
+
+### Centralizar verticalmente
+
+```css
+align-items: center;
+```
+
+### Centralizar nos dois eixos
+
+```css
+.container {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+```
+
+### Espaçamento
+
+```css
+gap: 20px;
+```
+
+### Quebrar linha
+
+```css
+flex-wrap: wrap;
+```
+
+---
+
+# 6. GRID
+
+Se a questão pedir uma grade de elementos:
+
+```css
+.container {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+```
+
+Isso cria:
+
+```text
+┌──────┐ ┌──────┐ ┌──────┐
+│ Card │ │ Card │ │ Card │
+└──────┘ └──────┘ └──────┘
+
+┌──────┐ ┌──────┐ ┌──────┐
+│ Card │ │ Card │ │ Card │
+└──────┘ └──────┘ └──────┘
+```
+
+### 2 colunas
+
+```css
+grid-template-columns: repeat(2, 1fr);
+```
+
+### 4 colunas
+
+```css
+grid-template-columns: repeat(4, 1fr);
+```
+
+---
+
+# 7. BOX MODEL
+
+Todo elemento pode ser entendido como:
+
+```text
+┌─────────────────────────────┐
+│          MARGIN             │
+│  ┌───────────────────────┐  │
+│  │        BORDER         │  │
+│  │  ┌─────────────────┐  │  │
+│  │  │     PADDING     │  │  │
+│  │  │  ┌───────────┐  │  │  │
+│  │  │  │  CONTENT  │  │  │  │
+│  │  │  └───────────┘  │  │  │
+│  │  └─────────────────┘  │  │
+│  └───────────────────────┘  │
+└─────────────────────────────┘
+```
+
+### Margin
+
+Espaço FORA do elemento.
+
+```css
+margin: 20px;
+```
+
+### Padding
+
+Espaço DENTRO do elemento.
+
+```css
+padding: 20px;
+```
+
+### Border
+
+Borda.
+
+```css
+border: 1px solid black;
+```
+
+### Width
+
+Largura.
+
+```css
+width: 300px;
+```
+
+### Height
+
+Altura.
+
+```css
+height: 200px;
+```
+
+---
+
+# 8. CORES
+
+```css
+color: red;
+```
+
+Cor do texto.
+
+```css
+background-color: blue;
+```
+
+Cor do fundo.
+
+Também pode usar hexadecimal:
+
+```css
+color: #ff0000;
+```
+
+RGB:
+
+```css
+color: rgb(255, 0, 0);
+```
+
+---
+
+# 9. TEXTO
+
+```css
+p {
+
+    color: #333;
+
+    font-size: 18px;
+
+    font-family: Arial;
+
+    font-weight: bold;
+
+    text-align: center;
+
+}
+```
+
+### Alinhamento
+
+```css
+text-align: left;
+text-align: center;
+text-align: right;
+```
+
+### Negrito
+
+```css
+font-weight: bold;
+```
+
+### Tamanho
+
+```css
+font-size: 20px;
+```
+
+---
+
+# 10. HOVER
+
+Se a questão falar:
+
+> "Quando passar o mouse..."
+
+Use:
+
+```css
+button:hover {
+
+    background-color: red;
+
+}
+```
+
+Exemplo:
+
+```css
+a:hover {
+
+    color: red;
+
+    text-decoration: underline;
+
+}
+```
+
+---
+
+# 11. POSITION
+
+## Relativo
+
+```css
+.elemento {
+
+    position: relative;
+
+}
+```
+
+## Absoluto
+
+```css
+.elemento {
+
+    position: absolute;
+
+    top: 20px;
+
+    right: 20px;
+
+}
+```
+
+## Fixo na tela
+
+```css
+.elemento {
+
+    position: fixed;
+
+    bottom: 20px;
+
+    right: 20px;
+
+}
+```
+
+---
+
+# 12. BORDA E ARREDONDAMENTO
+
+```css
+.card {
+
+    border: 1px solid black;
+
+    border-radius: 10px;
+
+}
+```
+
+### Sem borda
+
+```css
+border: none;
+```
+
+### Círculo
+
+```css
+border-radius: 50%;
+```
+
+---
+
+# 13. SOMBRA
+
+```css
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+```
+
+Não precisa decorar exatamente.
+
+Lembre:
+
+```text
+box-shadow
+   ↓
+sombra
+```
+
+---
+
+# 14. LINKS
+
+```html
+<a href="pagina.html">
+    Ir para página
+</a>
+```
+
+Abrir nova aba:
+
+```html
+<a href="https://google.com" target="_blank">
+    Google
+</a>
+```
+
+Link para uma seção da própria página:
+
+```html
+<a href="#contato">
+    Contato
+</a>
+
+<section id="contato">
+    ...
+</section>
+```
+
+---
+
+# 15. IMAGEM
+
+```html
+<img src="foto.jpg" alt="Descrição da foto">
+```
+
+Se estiver em uma pasta:
+
+```html
+<img src="img/foto.jpg" alt="Descrição">
+```
+
+Se a imagem estiver uma pasta acima:
+
+```html
+<img src="../foto.jpg" alt="Descrição">
+```
+
+---
+
+# 16. BOTÃO
+
+```html
+<button>
+    Clique aqui
+</button>
+```
+
+Dentro de formulário:
+
+```html
+<button type="submit">
+    Enviar
+</button>
+```
+
+---
+
+# 17. FORMULÁRIO
+
+Modelo rápido:
+
+```html
+<form>
+
+    <label for="nome">Nome:</label>
+
+    <input
+        type="text"
+        id="nome"
+        name="nome"
+    >
+
+
+    <label for="email">Email:</label>
+
+    <input
+        type="email"
+        id="email"
+        name="email"
+    >
+
+
+    <label for="senha">Senha:</label>
+
+    <input
+        type="password"
+        id="senha"
+        name="senha"
+    >
+
+
+    <label for="curso">Curso:</label>
+
+    <select id="curso">
+
+        <option>Ciência da Computação</option>
+
+        <option>Engenharia de Software</option>
+
+    </select>
+
+
+    <textarea
+        placeholder="Mensagem">
+    </textarea>
+
+
+    <button type="submit">
+        Enviar
+    </button>
+
+</form>
+```
+
+---
+
+# 18. INPUTS MAIS COMUNS
+
+```html
+<input type="text">
+```
+
+Texto.
+
+```html
+<input type="number">
+```
+
+Número.
+
+```html
+<input type="email">
+```
+
+Email.
+
+```html
+<input type="password">
+```
+
+Senha.
+
+```html
+<input type="date">
+```
+
+Data.
+
+```html
+<input type="checkbox">
+```
+
+Caixa de seleção.
+
+```html
+<input type="radio">
+```
+
+Escolha única.
+
+```html
+<input type="file">
+```
+
+Arquivo.
+
+---
+
+# 19. RESPONSIVIDADE
+
+Se pedirem:
+
+> "Faça a página funcionar em dispositivos móveis."
+
+Use:
+
+```css
+@media (max-width: 600px) {
+
+    /* CSS para celular */
+
+}
+```
+
+Exemplo:
+
+```css
+.container {
+
+    display: flex;
+
+}
+
+
+@media (max-width: 600px) {
+
+    .container {
+
+        flex-direction: column;
+
+    }
+
+}
+```
+
+---
+
+# 20. DIFERENÇA ENTRE px, %, rem, vh e vw
+
+### px
+
+Tamanho fixo.
+
+```css
+width: 300px;
+```
+
+### %
+
+Relativo ao elemento pai.
+
+```css
+width: 50%;
+```
+
+### rem
+
+Relacionado ao tamanho da fonte raiz.
+
+```css
+font-size: 2rem;
+```
+
+### vh
+
+Porcentagem da altura da tela.
+
+```css
+height: 100vh;
+```
+
+### vw
+
+Porcentagem da largura da tela.
+
+```css
+width: 100vw;
+```
+
+---
+
+# 21. SE PEDIREM UMA PÁGINA CENTRALIZADA
+
+```css
+.container {
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+}
+```
+
+O:
+
+```css
+margin: 0 auto;
+```
+
+é muito importante.
+
+Ele centraliza horizontalmente um elemento que tenha largura definida/limitada.
+
+---
+
+# 22. SE PEDIREM UM ELEMENTO NO CENTRO DA TELA
+
+```css
+.container {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 100vh;
+
+}
+```
+
+---
+
+# 23. SE PEDIREM CARDS LADO A LADO
+
+```css
+.cards {
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.card {
+
+    width: 300px;
+
+}
+```
+
+---
+
+# 24. SE PEDIREM CARDS EM GRID
+
+```css
+.cards {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+```
+
+---
+
+# 25. SE PEDIREM MENU HORIZONTAL
+
+HTML:
+
+```html
+<nav>
+
+    <a href="#">Home</a>
+    <a href="#">Sobre</a>
+    <a href="#">Contato</a>
+
+</nav>
+```
+
+CSS:
+
+```css
+nav {
+
+    display: flex;
+
+    gap: 20px;
+
+}
+```
+
+---
+
+# 26. SE PEDIREM MENU VERTICAL
+
+```css
+nav {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+```
+
+---
+
+# 27. SE PEDIREM QUE UM ELEMENTO OCUPE TODA A LARGURA
+
+```css
+.elemento {
+
+    width: 100%;
+
+}
+```
+
+---
+
+# 28. SE PEDIREM QUE UMA IMAGEM NÃO ESTOURE O CONTAINER
+
+```css
+img {
+
+    max-width: 100%;
+
+    height: auto;
+
+}
+```
+
+---
+
+# 29. SE PEDIREM UMA IMAGEM COM TAMANHO ESPECÍFICO
+
+```css
+img {
+
+    width: 300px;
+
+    height: 200px;
+
+    object-fit: cover;
+
+}
+```
+
+`object-fit: cover` faz a imagem preencher o espaço mantendo a proporção, podendo cortar partes dela.
+
+---
+
+# 30. SELECTOR POR ELEMENTO
+
+```css
+p {
+
+    color: red;
+
+}
+```
+
+Todos os `<p>` ficam vermelhos.
+
+---
+
+# 31. SELECTOR POR CLASSE
+
+```css
+.card {
+
+    color: blue;
+
+}
+```
+
+Todos os elementos com:
+
+```html
+class="card"
+```
+
+recebem o estilo.
+
+---
+
+# 32. SELECTOR POR ID
+
+```css
+#principal {
+
+    color: green;
+
+}
+```
+
+Elemento:
+
+```html
+id="principal"
+```
+
+---
+
+# 33. SELECTOR DE FILHO
+
+```css
+.container p {
+
+    color: red;
+
+}
+```
+
+Seleciona os `<p>` dentro de `.container`.
+
+---
+
+# 34. SELECTOR UNIVERSAL
+
+```css
+* {
+
+    margin: 0;
+
+}
+```
+
+Seleciona todos os elementos.
+
+---
+
+# 35. DISPLAY
+
+### Block
+
+```css
+display: block;
+```
+
+Ocupa a linha inteira.
+
+### Inline
+
+```css
+display: inline;
+```
+
+Fica na mesma linha.
+
+### Inline-block
+
+```css
+display: inline-block;
+```
+
+Fica na mesma linha, mas permite definir largura/altura.
+
+### Flex
+
+```css
+display: flex;
+```
+
+Ativa Flexbox.
+
+### Grid
+
+```css
+display: grid;
+```
+
+Ativa Grid.
+
+### None
+
+```css
+display: none;
+```
+
+Esconde o elemento.
+
+---
+
+# 36. ATALHOS MENTAIS PARA A PROVA
+
+Se a questão falar:
+
+| Questão pede        | Pense em                          |
+| ------------------- | --------------------------------- |
+| Lado a lado         | `display: flex`                   |
+| Centralizar         | `justify-content` + `align-items` |
+| Em coluna           | `flex-direction: column`          |
+| Espaçamento         | `gap`                             |
+| Grade               | `display: grid`                   |
+| 3 colunas           | `repeat(3, 1fr)`                  |
+| Responsividade      | `@media`                          |
+| Espaço interno      | `padding`                         |
+| Espaço externo      | `margin`                          |
+| Borda               | `border`                          |
+| Cantos arredondados | `border-radius`                   |
+| Sombra              | `box-shadow`                      |
+| Cor do texto        | `color`                           |
+| Cor do fundo        | `background-color`                |
+| Centralizar página  | `margin: 0 auto`                  |
+| Passar mouse        | `:hover`                          |
+| Esconder            | `display: none`                   |
+| Imagem responsiva   | `max-width: 100%`                 |
+| Formulário          | `<form>`                          |
+| Campo de texto      | `<input type="text">`             |
+| Senha               | `<input type="password">`         |
+| Email               | `<input type="email">`            |
+| Escolha única       | `radio`                           |
+| Várias escolhas     | `checkbox`                        |
+| Lista               | `<ul>` / `<ol>`                   |
+| Tabela              | `<table>`                         |
+| Link                | `<a>`                             |
+| Imagem              | `<img>`                           |
+
+---
+
+# 37. ESTRUTURA MÍNIMA PARA QUANDO ESTIVER COM PRESSA
+
+Se a prova pedir para criar uma página simples, comece daqui:
+
+```html
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Minha Página</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Meu Site</h1>
+
+        <nav>
+
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section>
+
+            <h2>Título</h2>
+
+            <p>
+                Texto da página.
+            </p>
+
+        </section>
+
+
+        <section class="cards">
+
+            <div class="card">
+
+                <h3>Card 1</h3>
+
+                <p>Descrição.</p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Card 2</h3>
+
+                <p>Descrição.</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>Rodapé</p>
+
+    </footer>
+
+</body>
+
+</html>
+```
+
+CSS:
+
+```css
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f5f5f5;
+
+}
+
+
+header {
+
+    padding: 20px;
+
+    background-color: #222;
+
+    color: white;
+
+}
+
+
+nav {
+
+    display: flex;
+
+    gap: 20px;
+
+}
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+}
+
+
+main {
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 30px;
+
+}
+
+
+.cards {
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.card {
+
+    background-color: white;
+
+    padding: 20px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    width: 300px;
+
+}
+
+
+footer {
+
+    padding: 20px;
+
+    background-color: #222;
+
+    color: white;
+
+    text-align: center;
+
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .cards {
+
+        flex-direction: column;
+
+    }
+
+    .card {
+
+        width: 100%;
+
+    }
+
+}
+```
+
+---
+
+# 38. ORDEM PARA RESOLVER UMA QUESTÃO
+
+Quando receber uma questão prática, pense nesta ordem:
+
+```text
+1. O que precisa aparecer?
+        ↓
+2. Crio a estrutura HTML
+        ↓
+3. Dou class para elementos repetidos
+        ↓
+4. Faço o CSS básico
+        ↓
+5. Organizo com FLEX ou GRID
+        ↓
+6. Ajusto tamanhos/espaçamentos
+        ↓
+7. Faço hover se pedir
+        ↓
+8. Faço @media se pedir responsividade
+```
+
+### EXEMPLO
+
+Questão:
+
+> "Crie três cards lado a lado, com imagem, título e botão."
+
+Você pensa:
+
+```text
+3 cards
+↓
+<div class="cards">
+↓
+<div class="card"> × 3
+↓
+display: flex
+↓
+gap
+↓
+imagem + h3 + button
+```
+
+---
+
+# 39. REGRA DE OURO
+
+Se você esquecer alguma coisa durante a prova:
+
+**HTML = estrutura/conteúdo**
+
+```text
+HTML
+ ↓
+texto
+imagem
+botão
+formulário
+tabela
+link
+seções
+```
+
+**CSS = aparência/organização**
+
+```text
+CSS
+ ↓
+cor
+tamanho
+posição
+espaçamento
+borda
+sombra
+alinhamento
+responsividade
+```
+
+E lembre principalmente:
+
+```css
+display: flex;
+```
+
+```css
+justify-content: center;
+```
+
+```css
+align-items: center;
+```
+
+```css
+gap: 20px;
+```
+
+```css
+margin: 0 auto;
+```
+
+```css
+padding: 20px;
+```
+
+```css
+width: 100%;
+```
+
+```css
+@media (max-width: 600px) { }
+```
+
+Esses comandos resolvem uma quantidade enorme de questões práticas de HTML/CSS.
