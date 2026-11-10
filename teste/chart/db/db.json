@@ -1,0 +1,20 @@
+{
+  "labels": ["Janeiro", "Fevereiro", "Março"],
+  "datasets": [
+    {
+      "label": "Produto A",
+      "data": [65, 59, 80],
+      "backgroundColor": "rgba(255, 99, 132, 0.2)"
+    },
+    {
+      "label": "Produto B",
+      "data": [35, 41, 50],
+      "backgroundColor": "rgba(54, 162, 235, 0.2)"
+    },
+    {
+      "label": "Produto C",
+      "data": [50, 55, 60],
+      "backgroundColor": "rgba(75, 192, 192, 0.2)"
+    }
+  ]
+}

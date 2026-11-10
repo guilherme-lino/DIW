@@ -1,0 +1,652 @@
+{
+  "pokemons": [
+    {
+      "id": 1,
+      "nome": "Bulbasaur",
+      "descricaoCurta": "Carrega uma semente nas costas desde o nascimento, que cresce junto com ele.",
+      "descricaoCompleta": "Bulbasaur absorve luz solar para alimentar a semente em suas costas. Nos primeiros dias de vida, ele vive dos nutrientes guardados nela. É um dos três iniciais de Kanto e uma ótima escolha para quem está começando a jornada.",
+      "imagem": "images/1.png",
+      "categoria": "Grama",
+      "peso": 6.9,
+      "altura": 0.7,
+      "tags": [
+        "inicial",
+        "kanto",
+        "semente"
+      ],
+      "destaque": false,
+      "tipos": [
+        "grama",
+        "veneno"
+      ],
+      "especie": "Semente",
+      "habilidade": "Overgrow",
+      "stats": {
+        "hp": 45,
+        "ataque": 49,
+        "defesa": 49,
+        "velocidade": 45
+      },
+      "fotos": [
+        {
+          "titulo": "Arte oficial",
+          "imagem": "images/1.png"
+        },
+        {
+          "titulo": "Sprite de frente",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+        },
+        {
+          "titulo": "Sprite de costas",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png"
+        },
+        {
+          "titulo": "Versão shiny",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Venusaur",
+      "descricaoCurta": "A flor em suas costas libera um perfume que acalma quem está por perto.",
+      "descricaoCompleta": "Venusaur é a evolução final de Bulbasaur. Sua flor enorme captura energia solar e a converte em força. Depois de chuvas, a flor fica ainda mais vistosa e o aroma se espalha por longas distâncias.",
+      "imagem": "images/3.png",
+      "categoria": "Grama",
+      "peso": 100,
+      "altura": 2,
+      "tags": [
+        "evolução final",
+        "kanto",
+        "flor"
+      ],
+      "destaque": false,
+      "tipos": [
+        "grama",
+        "veneno"
+      ],
+      "especie": "Semente",
+      "habilidade": "Overgrow",
+      "stats": {
+        "hp": 80,
+        "ataque": 82,
+        "defesa": 83,
+        "velocidade": 80
+      },
+      "fotos": [
+        {
+          "titulo": "Arte oficial",
+          "imagem": "images/3.png"
+        },
+        {
+          "titulo": "Sprite de frente",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"
+        },
+        {
+          "titulo": "Sprite de costas",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/3.png"
+        },
+        {
+          "titulo": "Versão shiny",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/3.png"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nome": "Charmander",
+      "descricaoCurta": "A chama na ponta do rabo indica seu humor e vitalidade.",
+      "descricaoCompleta": "Charmander prefere lugares quentes. Dizem que, quando chove, sai vapor da ponta de seu rabo. Se a chama se apagar, ele corre perigo, por isso treinadores experientes cuidam muito bem dela.",
+      "imagem": "images/4.png",
+      "categoria": "Fogo",
+      "peso": 8.5,
+      "altura": 0.6,
+      "tags": [
+        "inicial",
+        "kanto",
+        "chama"
+      ],
+      "destaque": false,
+      "tipos": [
+        "fogo"
+      ],
+      "especie": "Lagarto",
+      "habilidade": "Blaze",
+      "stats": {
+        "hp": 39,
+        "ataque": 52,
+        "defesa": 43,
+        "velocidade": 65
+      },
+      "fotos": [
+        {
+          "titulo": "Arte oficial",
+          "imagem": "images/4.png"
+        },
+        {
+          "titulo": "Sprite de frente",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
+        },
+        {
+          "titulo": "Sprite de costas",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/4.png"
+        },
+        {
+          "titulo": "Versão shiny",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/4.png"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "nome": "Charizard",
+      "descricaoCurta": "Voa em busca de adversários fortes e cospe fogo capaz de derreter qualquer coisa.",
+      "descricaoCompleta": "Charizard é a evolução final de Charmander. Suas asas permitem voar a grandes altitudes e sua chama fica mais quente depois de duras batalhas. Ele só enfrenta oponentes à altura de sua força.",
+      "imagem": "images/6.png",
+      "categoria": "Fogo",
+      "peso": 90.5,
+      "altura": 1.7,
+      "tags": [
+        "evolução final",
+        "voador",
+        "kanto"
+      ],
+      "destaque": true,
+      "tipos": [
+        "fogo",
+        "voador"
+      ],
+      "especie": "Chama",
+      "habilidade": "Blaze",
+      "stats": {
+        "hp": 78,
+        "ataque": 84,
+        "defesa": 78,
+        "velocidade": 100
+      },
+      "fotos": [
+        {
+          "titulo": "Arte oficial",
+          "imagem": "images/6.png"
+        },
+        {
+          "titulo": "Sprite de frente",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"
+        },
+        {
+          "titulo": "Sprite de costas",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/6.png"
+        },
+        {
+          "titulo": "Versão shiny",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/6.png"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "nome": "Squirtle",
+      "descricaoCurta": "Se retrai na concha ao se sentir ameaçado e ataca com jatos d'água certeiros.",
+      "descricaoCompleta": "Depois de nascer, o casco de Squirtle endurece e fica elástico. Seus jatos d'água são precisos e fortes o bastante para acertar alvos a longa distância.",
+      "imagem": "images/7.png",
+      "categoria": "Água",
+      "peso": 9,
+      "altura": 0.5,
+      "tags": [
+        "inicial",
+        "kanto",
+        "tartaruga"
+      ],
+      "destaque": false,
+      "tipos": [
+        "agua"
+      ],
+      "especie": "Tartaruguinha",
+      "habilidade": "Torrent",
+      "stats": {
+        "hp": 44,
+        "ataque": 48,
+        "defesa": 65,
+        "velocidade": 43
+      },
+      "fotos": [
+        {
+          "titulo": "Arte oficial",
+          "imagem": "images/7.png"
+        },
+        {
+          "titulo": "Sprite de frente",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
+        },
+        {
+          "titulo": "Sprite de costas",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/7.png"
+        },
+        {
+          "titulo": "Versão shiny",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/7.png"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "nome": "Blastoise",
+      "descricaoCurta": "Os canhões em seu casco disparam jatos d'água com força suficiente para atravessar aço.",
+      "descricaoCompleta": "Blastoise é a evolução final de Squirtle. Ele esmaga os oponentes com o peso do corpo e dispara água pelos canhões do casco com pontaria impressionante.",
+      "imagem": "images/9.png",
+      "categoria": "Água",
+      "peso": 85.5,
+      "altura": 1.6,
+      "tags": [
+        "evolução final",
+        "kanto",
+        "canhões"
+      ],
+      "destaque": false,
+      "tipos": [
+        "agua"
+      ],
+      "especie": "Marisco",
+      "habilidade": "Torrent",
+      "stats": {
+        "hp": 79,
+        "ataque": 83,
+        "defesa": 100,
+        "velocidade": 78
+      },
+      "fotos": [
+        {
+          "titulo": "Arte oficial",
+          "imagem": "images/9.png"
+        },
+        {
+          "titulo": "Sprite de frente",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"
+        },
+        {
+          "titulo": "Sprite de costas",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/9.png"
+        },
+        {
+          "titulo": "Versão shiny",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/9.png"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "nome": "Pikachu",
+      "descricaoCurta": "Armazena eletricidade nas bochechas e a libera em descargas poderosas.",
+      "descricaoCompleta": "Pikachu costuma ser visto em grupos. Quando vários se juntam, a eletricidade acumulada pode provocar tempestades. É o Pokémon mais famoso do mundo e companheiro inseparável de muitos treinadores.",
+      "imagem": "images/25.png",
+      "categoria": "Elétrico",
+      "peso": 6,
+      "altura": 0.4,
+      "tags": [
+        "mascote",
+        "elétrico",
+        "kanto"
+      ],
+      "destaque": true,
+      "tipos": [
+        "eletrico"
+      ],
+      "especie": "Rato",
+      "habilidade": "Static",
+      "stats": {
+        "hp": 35,
+        "ataque": 55,
+        "defesa": 40,
+        "velocidade": 90
+      },
+      "fotos": [
+        {
+          "titulo": "Arte oficial",
+          "imagem": "images/25.png"
+        },
+        {
+          "titulo": "Sprite de frente",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+        },
+        {
+          "titulo": "Sprite de costas",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/25.png"
+        },
+        {
+          "titulo": "Versão shiny",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/25.png"
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "nome": "Gengar",
+      "descricaoCurta": "Esconde-se nas sombras e pode baixar a temperatura do ambiente em alguns graus.",
+      "descricaoCompleta": "Gengar gosta de se esconder nas sombras de quem está sozinho à noite. Se você sentir um calafrio repentino, pode ser que ele esteja por perto. Apesar da fama, é brincalhão.",
+      "imagem": "images/94.png",
+      "categoria": "Fantasma",
+      "peso": 40.5,
+      "altura": 1.5,
+      "tags": [
+        "fantasma",
+        "noturno",
+        "kanto"
+      ],
+      "destaque": true,
+      "tipos": [
+        "fantasma",
+        "veneno"
+      ],
+      "especie": "Sombra",
+      "habilidade": "Levitate",
+      "stats": {
+        "hp": 60,
+        "ataque": 65,
+        "defesa": 60,
+        "velocidade": 110
+      },
+      "fotos": [
+        {
+          "titulo": "Arte oficial",
+          "imagem": "images/94.png"
+        },
+        {
+          "titulo": "Sprite de frente",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png"
+        },
+        {
+          "titulo": "Sprite de costas",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/94.png"
+        },
+        {
+          "titulo": "Versão shiny",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/94.png"
+        }
+      ]
+    },
+    {
+      "id": 133,
+      "nome": "Eevee",
+      "descricaoCurta": "Seu corpo instável pode se adaptar a diferentes ambientes e evoluir de várias formas.",
+      "descricaoCompleta": "Eevee tem uma composição genética rara, que permite mudanças repentinas quando exposto a certos elementos. Por isso, pode evoluir para formas diferentes e se adapta bem a qualquer clima.",
+      "imagem": "images/133.png",
+      "categoria": "Normal",
+      "peso": 6.5,
+      "altura": 0.3,
+      "tags": [
+        "evoluções",
+        "raro",
+        "kanto"
+      ],
+      "destaque": false,
+      "tipos": [
+        "normal"
+      ],
+      "especie": "Evolução",
+      "habilidade": "Run Away",
+      "stats": {
+        "hp": 55,
+        "ataque": 55,
+        "defesa": 50,
+        "velocidade": 55
+      },
+      "fotos": [
+        {
+          "titulo": "Arte oficial",
+          "imagem": "images/133.png"
+        },
+        {
+          "titulo": "Sprite de frente",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png"
+        },
+        {
+          "titulo": "Sprite de costas",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/133.png"
+        },
+        {
+          "titulo": "Versão shiny",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/133.png"
+        }
+      ]
+    },
+    {
+      "id": 143,
+      "nome": "Snorlax",
+      "descricaoCurta": "Come toneladas de comida por dia e só fica satisfeito depois de dormir.",
+      "descricaoCompleta": "Snorlax só se levanta para comer. Depois de uma refeição enorme, volta a dormir. Seu estômago aguenta até comida estragada, e sua barriga é tão macia que crianças brincam sobre ela.",
+      "imagem": "images/143.png",
+      "categoria": "Normal",
+      "peso": 460,
+      "altura": 2.1,
+      "tags": [
+        "sonolento",
+        "pesado",
+        "kanto"
+      ],
+      "destaque": true,
+      "tipos": [
+        "normal"
+      ],
+      "especie": "Sonolento",
+      "habilidade": "Immunity",
+      "stats": {
+        "hp": 160,
+        "ataque": 110,
+        "defesa": 65,
+        "velocidade": 30
+      },
+      "fotos": [
+        {
+          "titulo": "Arte oficial",
+          "imagem": "images/143.png"
+        },
+        {
+          "titulo": "Sprite de frente",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png"
+        },
+        {
+          "titulo": "Sprite de costas",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/143.png"
+        },
+        {
+          "titulo": "Versão shiny",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/143.png"
+        }
+      ]
+    },
+    {
+      "id": 150,
+      "nome": "Mewtwo",
+      "descricaoCurta": "Criado por engenharia genética, tem um dos maiores poderes psíquicos que se conhece.",
+      "descricaoCompleta": "Mewtwo foi criado a partir do DNA de Mew depois de anos de experimentos. O resultado é um Pokémon com poder psíquico enorme, mas com um coração feroz, que nunca foi domado.",
+      "imagem": "images/150.png",
+      "categoria": "Psíquico",
+      "peso": 122,
+      "altura": 2,
+      "tags": [
+        "lendário",
+        "psíquico",
+        "genético"
+      ],
+      "destaque": true,
+      "tipos": [
+        "psiquico"
+      ],
+      "especie": "Genético",
+      "habilidade": "Pressure",
+      "stats": {
+        "hp": 106,
+        "ataque": 110,
+        "defesa": 90,
+        "velocidade": 130
+      },
+      "fotos": [
+        {
+          "titulo": "Arte oficial",
+          "imagem": "images/150.png"
+        },
+        {
+          "titulo": "Sprite de frente",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png"
+        },
+        {
+          "titulo": "Sprite de costas",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/150.png"
+        },
+        {
+          "titulo": "Versão shiny",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/150.png"
+        }
+      ]
+    },
+    {
+      "id": 151,
+      "nome": "Mew",
+      "descricaoCurta": "Dizem que carrega o código genético de todos os Pokémon e quase nunca é visto.",
+      "descricaoCompleta": "Mew é tão raro que muitos especialistas duvidam de sua existência. Ele pode ficar invisível e voar sem ser notado, e só aparece para quem tem o coração puro.",
+      "imagem": "images/151.png",
+      "categoria": "Psíquico",
+      "peso": 4,
+      "altura": 0.4,
+      "tags": [
+        "lendário",
+        "raro",
+        "kanto"
+      ],
+      "destaque": false,
+      "tipos": [
+        "psiquico"
+      ],
+      "especie": "Novo Espécime",
+      "habilidade": "Synchronize",
+      "stats": {
+        "hp": 100,
+        "ataque": 100,
+        "defesa": 100,
+        "velocidade": 100
+      },
+      "fotos": [
+        {
+          "titulo": "Arte oficial",
+          "imagem": "images/151.png"
+        },
+        {
+          "titulo": "Sprite de frente",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png"
+        },
+        {
+          "titulo": "Sprite de costas",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/151.png"
+        },
+        {
+          "titulo": "Versão shiny",
+          "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/151.png"
+        }
+      ]
+    },
+    {
+      "nome": "Dragonite",
+      "descricaoCurta": "Pokemon dragao",
+      "descricaoCompleta": "pokemon mais top de todos",
+      "imagem": "https://www.google.com/imgres?q=dragonite%20pokeapi%20github&imgurl=https%3A%2F%2Fstatic.wikia.nocookie.net%2Fproject-pokemon%2Fimages%2F3%2F3e%2F250px-149Dragonite.png%2Frevision%2Flatest%3Fcb%3D20170109185528&imgrefurl=https%3A%2F%2Fproject-pokemon.fandom.com%2Fwiki%2FDragonite&docid=h-bObhjRBChUcM&tbnid=kYblgo4muRdCNM&vet=12ahUKEwiTqezB6fiXAxW1rJUCHdgWEJAQnPAOegUIjwIQAA..i&w=250&h=250&hcb=2&ved=2ahUKEwiTqezB6fiXAxW1rJUCHdgWEJAQnPAOegUIjwIQAA",
+      "categoria": "Fogo",
+      "peso": 10,
+      "altura": 23,
+      "tags": [
+        "kanto",
+        "raro"
+      ],
+      "destaque": true,
+      "tipos": [
+        "fogo"
+      ],
+      "habilidade": "dragao",
+      "id": 152
+    },
+    {
+      "nome": "aaaaaaa",
+      "descricaoCurta": "aaaaaa",
+      "descricaoCompleta": "aaaaaaaaaaa",
+      "imagem": "https://static.wikia.nocookie.net/project-pokemon/images/3/3e/250px-149Dragonite.png/revision/latest?cb=20170109185528",
+      "categoria": "Fogo",
+      "peso": 12,
+      "altura": 121,
+      "tags": [
+        "kanto"
+      ],
+      "destaque": true,
+      "tipos": [
+        "fogo"
+      ],
+      "habilidade": "123",
+      "id": 153
+    }
+  ],
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Grama",
+      "slug": "grama"
+    },
+    {
+      "id": 2,
+      "nome": "Fogo",
+      "slug": "fogo"
+    },
+    {
+      "id": 3,
+      "nome": "Água",
+      "slug": "agua"
+    },
+    {
+      "id": 4,
+      "nome": "Elétrico",
+      "slug": "eletrico"
+    },
+    {
+      "id": 5,
+      "nome": "Fantasma",
+      "slug": "fantasma"
+    },
+    {
+      "id": 6,
+      "nome": "Psíquico",
+      "slug": "psiquico"
+    },
+    {
+      "id": 7,
+      "nome": "Normal",
+      "slug": "normal"
+    }
+  ],
+  "comentarios": [
+    {
+      "id": 1,
+      "pokemonId": 25,
+      "autor": "Marina",
+      "nota": 5,
+      "texto": "O Pokémon mais carismático de Kanto!"
+    },
+    {
+      "id": 2,
+      "pokemonId": 6,
+      "autor": "Pedro",
+      "nota": 5,
+      "texto": "Meu inicial favorito depois da evolução."
+    },
+    {
+      "id": 3,
+      "pokemonId": 143,
+      "autor": "Lucas",
+      "nota": 4,
+      "texto": "Dorme demais, mas aguenta qualquer batalha."
+    },
+    {
+      "id": 4,
+      "pokemonId": 150,
+      "autor": "Marina",
+      "nota": 5,
+      "texto": "Poder psíquico impressionante."
+    }
+  ]
+}
