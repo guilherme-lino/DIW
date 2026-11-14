@@ -53,8 +53,8 @@
       "descricaoCompleta": "Venusaur é a evolução final de Bulbasaur. Sua flor enorme captura energia solar e a converte em força. Depois de chuvas, a flor fica ainda mais vistosa e o aroma se espalha por longas distâncias.",
       "imagem": "images/3.png",
       "categoria": "Grama",
-      "peso": 100.0,
-      "altura": 2.0,
+      "peso": 100,
+      "altura": 2,
       "tags": [
         "evolução final",
         "kanto",
@@ -190,7 +190,7 @@
       "descricaoCompleta": "Depois de nascer, o casco de Squirtle endurece e fica elástico. Seus jatos d'água são precisos e fortes o bastante para acertar alvos a longa distância.",
       "imagem": "images/7.png",
       "categoria": "Água",
-      "peso": 9.0,
+      "peso": 9,
       "altura": 0.5,
       "tags": [
         "inicial",
@@ -280,7 +280,7 @@
       "descricaoCompleta": "Pikachu costuma ser visto em grupos. Quando vários se juntam, a eletricidade acumulada pode provocar tempestades. É o Pokémon mais famoso do mundo e companheiro inseparável de muitos treinadores.",
       "imagem": "images/25.png",
       "categoria": "Elétrico",
-      "peso": 6.0,
+      "peso": 6,
       "altura": 0.4,
       "tags": [
         "mascote",
@@ -416,7 +416,7 @@
       "descricaoCompleta": "Snorlax só se levanta para comer. Depois de uma refeição enorme, volta a dormir. Seu estômago aguenta até comida estragada, e sua barriga é tão macia que crianças brincam sobre ela.",
       "imagem": "images/143.png",
       "categoria": "Normal",
-      "peso": 460.0,
+      "peso": 460,
       "altura": 2.1,
       "tags": [
         "sonolento",
@@ -461,8 +461,8 @@
       "descricaoCompleta": "Mewtwo foi criado a partir do DNA de Mew depois de anos de experimentos. O resultado é um Pokémon com poder psíquico enorme, mas com um coração feroz, que nunca foi domado.",
       "imagem": "images/150.png",
       "categoria": "Psíquico",
-      "peso": 122.0,
-      "altura": 2.0,
+      "peso": 122,
+      "altura": 2,
       "tags": [
         "lendário",
         "psíquico",
@@ -506,7 +506,7 @@
       "descricaoCompleta": "Mew é tão raro que muitos especialistas duvidam de sua existência. Ele pode ficar invisível e voar sem ser notado, e só aparece para quem tem o coração puro.",
       "imagem": "images/151.png",
       "categoria": "Psíquico",
-      "peso": 4.0,
+      "peso": 4,
       "altura": 0.4,
       "tags": [
         "lendário",
@@ -543,6 +543,43 @@
           "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/151.png"
         }
       ]
+    },
+    {
+      "nome": "Dragonite",
+      "descricaoCurta": "Pokemon dragao",
+      "descricaoCompleta": "pokemon mais top de todos",
+      "imagem": "https://www.google.com/imgres?q=dragonite%20pokeapi%20github&imgurl=https%3A%2F%2Fstatic.wikia.nocookie.net%2Fproject-pokemon%2Fimages%2F3%2F3e%2F250px-149Dragonite.png%2Frevision%2Flatest%3Fcb%3D20170109185528&imgrefurl=https%3A%2F%2Fproject-pokemon.fandom.com%2Fwiki%2FDragonite&docid=h-bObhjRBChUcM&tbnid=kYblgo4muRdCNM&vet=12ahUKEwiTqezB6fiXAxW1rJUCHdgWEJAQnPAOegUIjwIQAA..i&w=250&h=250&hcb=2&ved=2ahUKEwiTqezB6fiXAxW1rJUCHdgWEJAQnPAOegUIjwIQAA",
+      "categoria": "Fogo",
+      "peso": 10,
+      "altura": 23,
+      "tags": [
+        "kanto",
+        "raro"
+      ],
+      "destaque": true,
+      "tipos": [
+        "fogo"
+      ],
+      "habilidade": "dragao",
+      "id": 152
+    },
+    {
+      "nome": "aaaaaaa",
+      "descricaoCurta": "aaaaaa",
+      "descricaoCompleta": "aaaaaaaaaaa",
+      "imagem": "https://static.wikia.nocookie.net/project-pokemon/images/3/3e/250px-149Dragonite.png/revision/latest?cb=20170109185528",
+      "categoria": "Fogo",
+      "peso": 12,
+      "altura": 121,
+      "tags": [
+        "kanto"
+      ],
+      "destaque": true,
+      "tipos": [
+        "fogo"
+      ],
+      "habilidade": "123",
+      "id": 153
     }
   ],
   "categorias": [

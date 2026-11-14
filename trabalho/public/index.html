@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo Pokémon</title>
+
+  <!-- Bootstrap CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Fontes do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header-container">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+
+        <a class="navbar-brand logo" href="index.html">
+          <span class="bola"></span>
+          Catálogo Pokémon
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu">
+            <li class="nav-item"><a class="nav-link" href="#destaques">Destaques</a></li>
+            <li class="nav-item"><a class="nav-link" href="#pokedex">Pokédex</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          </ul>
+          <a class="botao botao-pequeno ms-lg-3" href="#pokedex">Explorar</a>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== SEÇÃO 1: ITENS EM DESTAQUE (carrossel Bootstrap) ===== -->
+    <section class="destaque" id="destaques">
+      <div class="container pt-5">
+        <span class="tag tag-escura">Em destaque</span>
+        <h1 class="destaque-titulo">Pokémon que você precisa conhecer</h1>
+      </div>
+
+      <div id="carrosselDestaques" class="carousel slide pt-4" data-bs-ride="carousel" data-bs-interval="6000">
+        <div class="carousel-indicators" id="destaques-indicadores"></div>
+        <div class="carousel-inner" id="destaques-slides"></div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrosselDestaques" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Destaque anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrosselDestaques" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo destaque</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ===== SEÇÃO 2: GRUPO DE CARDS (gerados a partir do JSON) ===== -->
+    <section class="pokedex" id="pokedex">
+      <div class="container py-5">
+
+        <div class="secao-titulo mb-4">
+          <h2>Pokédex</h2>
+          <p>Digite um nome ou escolha um tipo para filtrar. Clique no Pokémon para ver todos os detalhes.</p>
+        </div>
+
+        <form id="form-busca" class="row g-3 align-items-end mb-4" action="#" method="get">
+          <div class="col-sm-6 col-lg-4">
+            <label for="nome-pokemon" class="form-label">Nome do Pokémon</label>
+            <input type="text" class="form-control" id="nome-pokemon" name="nome" placeholder="Ex: Pikachu" autocomplete="off">
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <label for="tipo-pokemon" class="form-label">Tipo</label>
+            <select id="tipo-pokemon" name="tipo" class="form-select">
+              <option value="">Todos os tipos</option>
+            </select>
+          </div>
+
+          <div class="col-12 col-lg-auto d-flex gap-2">
+            <button type="submit" class="botao botao-primario">Buscar</button>
+            <button type="button" class="botao" id="limpar-busca">Limpar filtros</button>
+          </div>
+        </form>
+
+        <p class="contagem" id="contagem" aria-live="polite"></p>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 g-4" id="lista-pokemons"></div>
+
+        <div class="text-center py-5 d-none" id="sem-resultados">
+          <h3>Nenhum Pokémon encontrado</h3>
+          <p>Tente outro nome ou selecione "Todos os tipos".</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== SEÇÃO 3: SOBRE O RESPONSÁVEL PELO SITE ===== -->
+    <section class="sobre" id="sobre">
+      <div class="container py-5">
+        <div class="row align-items-center g-4">
+
+          <div class="col-md-3 text-center">
+            <div class="avatar" aria-hidden="true">GS</div>
+          </div>
+
+          <div class="col-md-9">
+            <h2>Sobre o criador</h2>
+            <p class="sobre-nome">Guilherme Lino de Castro Souza</p>
+
+            <dl class="sobre-dados row">
+              <div class="col-sm-6"><dt>Matrícula</dt><dd>912360</dd></div>
+              <div class="col-sm-6"><dt>Disciplina</dt><dd>Desenvolvimento de Interfaces Web</dd></div>
+              <div class="col-12"><dt>Projeto</dt><dd>Catálogo Pokémon</dd></div>
+            </dl>
+
+            <p>O projeto é um catálogo web dedicado ao universo Pokémon, com foco inicial na região de Kanto. Em vez de uma lista de fichas técnicas, a ideia é reunir em um só lugar os destaques da coleção, os Pokémon organizados por tipo e uma busca para filtrar por nome ou categoria.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container py-4">
+      <div class="row align-items-center">
+
+        <div class="col-md-6 footer-logo mb-3 mb-md-0">
+          <span class="bola bola-branca"></span>
+          Catálogo Pokémon
+        </div>
+
+        <div class="col-md-6">
+          <nav>
+            <ul class="menu d-flex justify-content-md-end gap-4 list-unstyled mb-0">
+              <li><a href="#destaques">Destaques</a></li>
+              <li><a href="#pokedex">Pokédex</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+            </ul>
+          </nav>
+        </div>
+
+      </div>
+
+      <div class="footer-rodape d-flex justify-content-between flex-wrap gap-2 mt-4 pt-3">
+        <span>Projeto acadêmico - Desenvolvimento de Interfaces Web</span>
+        <span>Dados e imagens: PokéAPI</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -30,8 +30,9 @@
 
         <div class="collapse navbar-collapse" id="menuPrincipal">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu">
-            <li class="nav-item"><a class="nav-link" href="index.html#inicio">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#destaques">Destaques</a></li>
             <li class="nav-item"><a class="nav-link" href="index.html#pokedex">Pokédex</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#sobre">Sobre</a></li>
           </ul>
           <a class="botao botao-pequeno ms-lg-3" href="index.html#pokedex">Explorar</a>
         </div>
@@ -41,24 +42,27 @@
   </header>
 
   <main>
-    <!-- conteúdo montado pelo app.js a partir do id da query string -->
+
+    <!-- ===== SEÇÃO 1: INFORMAÇÕES GERAIS (preenchida pelo app.js) ===== -->
     <section class="detalhe" id="detalhe">
       <div class="container py-5">
         <a href="index.html#pokedex" class="link-simples">← Voltar para a Pokédex</a>
-        <div class="row g-4 mt-1" id="detalhe-conteudo"></div>
+        <div class="row align-items-center g-4 mt-2" id="detalhe-conteudo"></div>
       </div>
     </section>
 
-    <!-- fotos vinculadas ao item (montadas pelo app.js) -->
+    <!-- ===== SEÇÃO 2: FOTOS VINCULADAS ===== -->
     <section class="fotos" id="fotos">
       <div class="container py-5">
         <div class="secao-titulo mb-4">
           <h2 id="fotos-titulo">Fotos</h2>
-          <p>Arte oficial e sprites do jogo, de frente, de costas e na versão shiny.</p>
+          <p>Arte oficial e sprites do jogo, incluindo a versão shiny.</p>
         </div>
+
         <div class="row row-cols-2 row-cols-md-4 g-4" id="fotos-lista"></div>
       </div>
     </section>
+
   </main>
 
   <!-- ===== FOOTER ===== -->
@@ -74,8 +78,9 @@
         <div class="col-md-6">
           <nav>
             <ul class="menu d-flex justify-content-md-end gap-4 list-unstyled mb-0">
-              <li><a href="index.html#inicio">Início</a></li>
+              <li><a href="index.html#destaques">Destaques</a></li>
               <li><a href="index.html#pokedex">Pokédex</a></li>
+              <li><a href="index.html#sobre">Sobre</a></li>
             </ul>
           </nav>
         </div>
