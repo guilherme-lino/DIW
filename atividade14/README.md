@@ -75,21 +75,21 @@ A página `estatisticas.html` apresenta os dados da Pokédex em gráficos feitos
  
 Gráfico com os dados iniciais:
  
-![Estatísticas - dados iniciais](screenshots/estatisticas-1.png)
+![Estatísticas - dados iniciais](public/screenshots/estatisticas-1.png)
  
 Gráfico depois de cadastrar novos Pokémon:
  
-![Estatísticas - após cadastro](screenshots/estatisticas-2.png)
+![Estatísticas - após cadastro](public/screenshots/estatisticas-2.png)
  
 ## Prints das demais páginas
  
 Home com os cards:
  
-![Home](screenshots/home.png)
+![Home](public/screenshots/home.png)
  
 Página de detalhes:
  
-![Detalhes](screenshots/detalhes.png)
+![Detalhes](public/screenshots/detalhes.png)
  
 ## Créditos
  
