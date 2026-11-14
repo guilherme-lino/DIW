@@ -545,41 +545,22 @@
       ]
     },
     {
-      "nome": "Dragonite",
-      "descricaoCurta": "Pokemon dragao",
-      "descricaoCompleta": "pokemon mais top de todos",
-      "imagem": "https://www.google.com/imgres?q=dragonite%20pokeapi%20github&imgurl=https%3A%2F%2Fstatic.wikia.nocookie.net%2Fproject-pokemon%2Fimages%2F3%2F3e%2F250px-149Dragonite.png%2Frevision%2Flatest%3Fcb%3D20170109185528&imgrefurl=https%3A%2F%2Fproject-pokemon.fandom.com%2Fwiki%2FDragonite&docid=h-bObhjRBChUcM&tbnid=kYblgo4muRdCNM&vet=12ahUKEwiTqezB6fiXAxW1rJUCHdgWEJAQnPAOegUIjwIQAA..i&w=250&h=250&hcb=2&ved=2ahUKEwiTqezB6fiXAxW1rJUCHdgWEJAQnPAOegUIjwIQAA",
-      "categoria": "Fogo",
-      "peso": 10,
-      "altura": 23,
+      "nome": "Haunter",
+      "descricaoCurta": "Pokemon fantasma",
+      "descricaoCompleta": "Gosta de espreitar na escuridão e tocar nos ombros das pessoas com uma mão gasosa. Seu toque provoca um tremor incessante.",
+      "imagem": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/093.png",
+      "categoria": "Fantasma",
+      "peso": 0.1,
+      "altura": 1.6,
       "tags": [
-        "kanto",
-        "raro"
+        "Kanto"
       ],
-      "destaque": true,
+      "destaque": false,
       "tipos": [
-        "fogo"
+        "fantasma"
       ],
-      "habilidade": "dragao",
+      "habilidade": "Levitate",
       "id": 152
-    },
-    {
-      "nome": "aaaaaaa",
-      "descricaoCurta": "aaaaaa",
-      "descricaoCompleta": "aaaaaaaaaaa",
-      "imagem": "https://static.wikia.nocookie.net/project-pokemon/images/3/3e/250px-149Dragonite.png/revision/latest?cb=20170109185528",
-      "categoria": "Fogo",
-      "peso": 12,
-      "altura": 121,
-      "tags": [
-        "kanto"
-      ],
-      "destaque": true,
-      "tipos": [
-        "fogo"
-      ],
-      "habilidade": "123",
-      "id": 153
     }
   ],
   "categorias": [
